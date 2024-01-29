@@ -3,7 +3,7 @@ export default function FormularioVisitante() {
     <>
       <form
         action=""
-        className="w-full lg:w-1/2 px-5 py-6 flex flex-col items-start justify-center gap-2 rounded-lg shadow-lg bg-white"
+        className="w-full lg:w-5/12	 px-5 py-6 flex flex-col items-start justify-center gap-2 rounded-lg shadow-lg bg-white"
       >
         <h2 className="w-full mb-3 text-center text-xl font-semibold">
           Seja bem-vindo(a), visitante
