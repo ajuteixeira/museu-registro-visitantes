@@ -1,11 +1,11 @@
-import RegistroVisitante from "./pages/RegistroVisitante"
+import CadastroVisitante from "./pages/CadastroVisitante";
 
 function App() {
   return (
     <>
-      <RegistroVisitante/>
+      <CadastroVisitante />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
