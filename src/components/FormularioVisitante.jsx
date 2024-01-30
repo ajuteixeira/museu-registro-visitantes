@@ -3,7 +3,7 @@ export default function FormularioVisitante() {
     <>
       <form
         action=""
-        className="w-full lg:w-5/12	 px-5 py-6 flex flex-col items-start justify-center gap-2 rounded-lg shadow-lg bg-white"
+        className="w-4/5 md:w-3/5 lg:w-5/12 xl:w-1/3 px-5 py-6 flex flex-col items-start justify-center gap-2 rounded-lg shadow-lg bg-white"
       >
         <h2 className="w-full mb-3 text-center text-xl font-semibold">
           Seja bem-vindo(a), visitante
@@ -36,7 +36,7 @@ export default function FormularioVisitante() {
           />
         </div>
         <div className="w-full flex justify-between gap-5">
-          <div className="w-full flex flex-col">
+          <div className="w-1/2 flex flex-col">
             <label htmlFor="genero">Gênero</label>
             <select
               className="px-2 py-3 rounded-md border border-[#ddd]"
@@ -47,7 +47,7 @@ export default function FormularioVisitante() {
               <option value="feminino">Feminino</option>
             </select>
           </div>
-          <div className="w-full flex flex-col">
+          <div className="w-1/2 flex flex-col">
             <label htmlFor="idade">Idade</label>
             <input
               className="px-2 py-3 rounded-md border border-[#ddd]"
@@ -58,7 +58,7 @@ export default function FormularioVisitante() {
           </div>
         </div>
         <div className="w-full flex justify-between gap-5">
-          <div className="w-full flex flex-col">
+          <div className="w-1/2 flex flex-col">
             <label htmlFor="cidade">Cidade</label>
             <select
               className="px-2 py-3 rounded-md border border-[#ddd]"
@@ -68,7 +68,7 @@ export default function FormularioVisitante() {
               <option value="fortaleza">Fortaleza</option>
             </select>
           </div>
-          <div className="w-full flex flex-col">
+          <div className="w-1/2 flex flex-col">
             <label htmlFor="bairro">Bairro</label>
             <select
               className="px-2 py-3 rounded-md border border-[#ddd]"
