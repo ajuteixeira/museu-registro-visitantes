@@ -1,9 +1,9 @@
-import CadastroVisitante from "./pages/CadastroVisitante";
+import Login from "./pages/Login";
 
 function App() {
   return (
     <>
-      <CadastroVisitante />
+      <Login />
     </>
   );
 }
