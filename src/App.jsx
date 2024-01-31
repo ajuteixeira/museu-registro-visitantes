@@ -1,9 +1,9 @@
-import CadastroVisitante from "./pages/CadastroVisitante";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <CadastroVisitante />
+      <Home />
     </>
   );
 }
