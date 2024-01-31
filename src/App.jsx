@@ -1,9 +1,9 @@
-import Dashboard from "./pages/Dashboard";
+import CadastroVisitante from "./pages/CadastroVisitante";
 
 function App() {
   return (
     <>
-      <Dashboard />
+      <CadastroVisitante />
     </>
   );
 }
