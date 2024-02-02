@@ -1,4 +1,4 @@
-export default function FormularioLogin() {
+export default function LoginForm() {
   return (
     <>
       <form

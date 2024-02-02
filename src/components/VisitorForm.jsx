@@ -1,4 +1,4 @@
-export default function FormularioVisitante() {
+export default function VisitorForm() {
   return (
     <>
       <form

@@ -1,45 +1,30 @@
+import { useState, useEffect } from "react";
+import { API } from "../services";
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import PieChart from "../components/PieChart";
-import BarChart from "../components/BarChart";
-import LineChart from "../components/LineChart";
+import CustomPieChart from "../components/CustomPieChart";
+import CountData from "../utils/CountData";
 
 export default function Dashboard() {
+  const [visitantes, setVisitantes] = useState([]);
+
+  const getVisitantes = async () => {
+    const visitantes = await API.get("visitantes");
+    setVisitantes(visitantes["data"]);
+  };
+
+  useEffect(() => {
+    getVisitantes();
+  }, []);
+
   return (
     <>
-      <section className="h-screen flex flex-col items-center justify-start gap-24 bg-[#f4f4f4]">
+      <section className="h-full flex flex-col items-center justify-start gap-24 bg-[#f4f4f4]">
         <Header />
         <div className="w-full h-full flex items-center justify-center gap-5 flex-wrap">
-          <div className="w-2/5 h-1/2 p-5 flex flex-col items-center justify-between rounded-lg bg-white">
-            <div className="w-full px-2 flex justify-between">
-              <span>teste</span>
-              <span>teste</span>
-            </div>
-            <LineChart />
-          </div>
-          <div className="w-2/5 h-1/2 p-5 flex items-center justify-between rounded-lg bg-white">
-            <div className="flex flex-col">
-              <spa>teste</spa>
-              <spa>teste</spa>
-              <spa>teste</spa>
-            </div>
-            <PieChart />
-          </div>
-          <div className="w-2/5 h-1/2 p-5 flex flex-col items-center justify-between rounded-lg bg-white">
-            <div className="w-full px-2 flex justify-between">
-              <span>teste</span>
-              <span>teste</span>
-            </div>
-            <BarChart />
-          </div>
-          <div className="w-2/5 h-1/2 p-5 flex items-center justify-between rounded-lg bg-white">
-            <div className="flex flex-col">
-              <spa>teste</spa>
-              <spa>teste</spa>
-              <spa>teste</spa>
-            </div>
-            <PieChart />
-          </div>
+          <CustomPieChart data={CountData(visitantes, "visitante_cidade")} />
+          <CustomPieChart data={CountData(visitantes, "visitante_genero")} />
         </div>
         <Footer />
       </section>

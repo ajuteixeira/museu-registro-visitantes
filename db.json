@@ -1,5 +1,5 @@
 {
-  "visitante": [
+  "visitantes": [
     {
       "visitante_id": 1,
       "visitante_nome": "Juliana",
@@ -15,7 +15,7 @@
       "visitante_nome": "Gustavo",
       "visitante_idade": 27,
       "visitante_profissao": "Estudante",
-      "visitante_cidade": "Fortaleza",
+      "visitante_cidade": "Horizonte",
       "visitante_bairro": "Aldeota",
       "visitante_genero": 1,
       "visitante_cpf": "32112312312"
@@ -35,7 +35,7 @@
       "visitante_nome": "Mimi",
       "visitante_idade": 21,
       "visitante_profissao": "Costureiro",
-      "visitante_cidade": "Fortaleza",
+      "visitante_cidade": "Caucaia",
       "visitante_bairro": "Meireles",
       "visitante_genero": 1,
       "visitante_cpf": "22112312312"
