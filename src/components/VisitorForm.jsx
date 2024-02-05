@@ -17,7 +17,7 @@ export default function VisitorForm() {
   // função executada ao submeter o formulário
   const submitForm = async (event) => {
     event.preventDefault();
-    const result = await API.post("visitantes", inputs);
+    const result = await API.post("visitante", inputs);
     setResponse(result.data);
   };
 
