@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CustomPieChart from "../components/CustomPieChart";
 import CountData from "../utils/CountData";
+import CustomBarChart from "../components/CustomBarChart";
 
 export default function Dashboard() {
   const [visitante, setVisitante] = useState([]);
@@ -23,8 +24,18 @@ export default function Dashboard() {
       <section className="h-full flex flex-col items-center justify-start gap-24 bg-[#f4f4f4]">
         <Header />
         <div className="w-full h-full flex items-center justify-center gap-5 flex-wrap">
-          <CustomPieChart title="Visitantes por cidade" data={CountData(visitante, "visitante_cidade")} />
-          <CustomPieChart title="Visitantes por gênero" data={CountData(visitante, "visitante_genero")} />
+          <CustomPieChart
+            title="Visitantes por cidade"
+            data={CountData(visitante, "visitante_cidade")}
+          />
+          <CustomPieChart
+            title="Visitantes por gênero"
+            data={CountData(visitante, "visitante_genero")}
+          />
+          <CustomBarChart
+            title="Visitantes por mês"
+            data={CountData(visitante, "visitante_cidade")}
+          />
         </div>
         <Footer />
       </section>
