@@ -23,8 +23,8 @@ export default function Dashboard() {
       <section className="h-full flex flex-col items-center justify-start gap-24 bg-[#f4f4f4]">
         <Header />
         <div className="w-full h-full flex items-center justify-center gap-5 flex-wrap">
-          <CustomPieChart data={CountData(visitante, "visitante_cidade")} />
-          <CustomPieChart data={CountData(visitante, "visitante_genero")} />
+          <CustomPieChart title="Visitantes por cidade" data={CountData(visitante, "visitante_cidade")} />
+          <CustomPieChart title="Visitantes por gênero" data={CountData(visitante, "visitante_genero")} />
         </div>
         <Footer />
       </section>
