@@ -51,12 +51,7 @@ const CustomBarChart = ({ data, title, color }) => {
         }}
       >
         <Tooltip content={<CustomTooltip />} />
-        <Bar
-          dataKey="value"
-          barSize={20}
-          fill={color}
-          background={{ fill: "#eee" }}
-        />
+        <Bar dataKey="value" fill={color} background={{ fill: "#eee" }} />
         <CartesianGrid strokeDasharray="2" />
         <XAxis
           dataKey="name"
