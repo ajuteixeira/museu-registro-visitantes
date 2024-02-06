@@ -30,11 +30,13 @@ export default function Dashboard() {
           />
           <CustomBarChart
             title="Visitantes por bairro"
+            color="#8884d8"
             data={CountData(visitante, "visitante_bairro")}
           />
           <CustomBarChart
             title="Visitantes por mês"
-            data={CountData(visitante, "visitante_cidade")}
+            color="#8884d8"
+            data={CountData(visitante, "visitante_data")}
           />
           <CustomPieChart
             title="Visitantes por gênero"

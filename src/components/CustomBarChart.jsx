@@ -24,7 +24,7 @@ class CustomizedAxisTick extends PureComponent {
 }
 
 const CustomTooltip = ({ active, payload, label }) => {
-  if (active && payload && payload.length / 2) {
+  if (active && payload && payload.length) {
     return (
       <p className="bg-white border px-3 py-4 ">{`${label} : ${payload[0].value}`}</p>
     );
@@ -33,7 +33,7 @@ const CustomTooltip = ({ active, payload, label }) => {
   return null;
 };
 
-const CustomBarChart = ({ data, title }) => {
+const CustomBarChart = ({ data, title, color }) => {
   const formattedData = FormatData(data);
 
   return (
@@ -54,27 +54,18 @@ const CustomBarChart = ({ data, title }) => {
         <Bar
           dataKey="value"
           barSize={20}
-          fill="#8884d8"
+          fill={color}
           background={{ fill: "#eee" }}
         />
         <CartesianGrid strokeDasharray="2" />
         <XAxis
           dataKey="name"
+          interval={0}
           scale="auto"
           tick={<CustomizedAxisTick />}
           tickMargin={-3}
         />
-        <YAxis
-          label={{
-            value: "Visitantes",
-            fontSize: 13,
-            angle: -90,
-            position: "insideLeft",
-            textAnchor: "middle",
-          }}
-          tick={{ fontSize: 13 }}
-          allowDecimals={false}
-        />
+        <YAxis tick={{ fontSize: 13 }} interval={0} allowDecimals={false} />
       </BarChart>
     </div>
   );

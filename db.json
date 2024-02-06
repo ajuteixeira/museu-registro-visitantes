@@ -2,63 +2,102 @@
   "visitante": [
     {
       "visitante_id": 1,
+      "visitante_nome": "Julia",
+      "visitante_idade": 19,
+      "visitante_profissao": "Estudante",
+      "visitante_cidade": "Fortaleza",
+      "visitante_bairro": "Centro",
+      "visitante_genero": 2,
+      "visitante_cpf": "12312312312",
+      "visitante_data": "2024-01-06"
+    },
+    {
+      "visitante_id": 2,
       "visitante_nome": "Juliana",
       "visitante_idade": 26,
       "visitante_profissao": "Estudante",
       "visitante_cidade": "Fortaleza",
       "visitante_bairro": "Aerolândia",
       "visitante_genero": 2,
-      "visitante_cpf": "12312312312"
+      "visitante_cpf": "12312312312",
+      "visitante_data": "2024-01-06"
     },
     {
-      "visitante_id": 2,
+      "visitante_id": 3,
       "visitante_nome": "Gustavo",
       "visitante_idade": 27,
       "visitante_profissao": "Estudante",
       "visitante_cidade": "Horizonte",
       "visitante_bairro": "Aldeota",
       "visitante_genero": 1,
-      "visitante_cpf": "32112312312"
+      "visitante_cpf": "32112312312",
+      "visitante_data": "2024-02-06"
     },
     {
-      "visitante_id": 3,
+      "visitante_id": 4,
       "visitante_nome": "Maria",
       "visitante_idade": 49,
       "visitante_profissao": "Professora",
       "visitante_cidade": "Fortaleza",
       "visitante_bairro": "Meireles",
       "visitante_genero": 2,
-      "visitante_cpf": "12112312312"
+      "visitante_cpf": "12112312312",
+      "visitante_data": "2024-03-06"
     },
     {
-      "visitante_id": 4,
+      "visitante_id": 5,
       "visitante_nome": "Mimi",
       "visitante_idade": 21,
       "visitante_profissao": "Costureiro",
       "visitante_cidade": "Caucaia",
       "visitante_bairro": "Meireles",
       "visitante_genero": 1,
-      "visitante_cpf": "22112312312"
+      "visitante_cpf": "22112312312",
+      "visitante_data": "2024-04-06"
     },
     {
-      "visitante_id": 5,
+      "visitante_id": 6,
       "visitante_nome": "Léia",
       "visitante_idade": 23,
       "visitante_profissao": "Modelo",
       "visitante_cidade": "Fortaleza",
       "visitante_bairro": "Meireles",
       "visitante_genero": 2,
-      "visitante_cpf": "33112312312"
+      "visitante_cpf": "33112312312",
+      "visitante_data": "2024-04-06"
     },
     {
-      "visitante_id": 6,
+      "visitante_id": 7,
       "visitante_nome": "Luffy",
       "visitante_idade": 23,
       "visitante_profissao": "Pirata",
       "visitante_cidade": "Fortaleza",
       "visitante_bairro": "Meireles",
       "visitante_genero": 1,
-      "visitante_cpf": "11112312312"
+      "visitante_cpf": "11112312312",
+      "visitante_data": "2024-05-06"
+    },
+    {
+      "visitante_id": 8,
+      "visitante_nome": "Ana",
+      "visitante_idade": 23,
+      "visitante_profissao": "Modelo",
+      "visitante_cidade": "Fortaleza",
+      "visitante_bairro": "Praia do Futuro",
+      "visitante_genero": 2,
+      "visitante_cpf": "33112312312",
+      "visitante_data": "2024-06-06"
+    },
+    {
+      "visitante_id": 9,
+      "visitante_nome": "Lucia",
+      "visitante_idade": 33,
+      "visitante_profissao": "Marceneira",
+      "visitante_cidade": "Sobral",
+      "visitante_bairro": "Pedras",
+      "visitante_genero": 2,
+      "visitante_cpf": "33112312312",
+      "visitante_data": "2024-07-06"
     }
   ]
 }
