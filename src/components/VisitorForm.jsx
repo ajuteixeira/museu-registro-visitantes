@@ -74,7 +74,7 @@ export default function VisitorForm() {
               required
               onChange={updateInputs}
             >
-              <option value="" disabled></option>
+              <option value="" disabled selected></option>
               <option value="1">Masculino</option>
               <option value="2">Feminino</option>
             </select>
