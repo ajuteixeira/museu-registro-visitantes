@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { API } from "../services";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
   const [inputs, setInputs] = useState({});
   const [response, setResponse] = useState();
+  const navigate = useNavigate();
 
   // função para guardar os valores dos inputs em formato chave-valor
   const updateInputs = (event) => {
@@ -20,6 +22,7 @@ export default function LoginForm() {
     event.preventDefault();
     const result = await API.post("login", inputs);
     setResponse(result.data);
+    if (result.data === "success") navigate("/dashboard");
   };
 
   return (
