@@ -38,6 +38,7 @@ export default function VisitorForm() {
             type="text"
             name="nome"
             id="visitante_nome"
+            required
             onChange={updateInputs}
           />
         </div>
@@ -48,6 +49,7 @@ export default function VisitorForm() {
             type="number"
             name="cpf"
             id="visitante_cpf"
+            required
             onChange={updateInputs}
           />
         </div>
@@ -58,6 +60,7 @@ export default function VisitorForm() {
             type="text"
             name="profissao"
             id="visitante_profissao"
+            required
             onChange={updateInputs}
           />
         </div>
@@ -68,6 +71,7 @@ export default function VisitorForm() {
               className="px-2 py-3 rounded-md border border-[#ddd]"
               name="genero"
               id="visitante_genero"
+              required
               onChange={updateInputs}
             >
               <option value="" disabled></option>
@@ -82,6 +86,7 @@ export default function VisitorForm() {
               type="number"
               name="idade"
               id="visitante_idade"
+              required
               onChange={updateInputs}
             />
           </div>
@@ -93,9 +98,10 @@ export default function VisitorForm() {
               className="px-2 py-3 rounded-md border border-[#ddd]"
               name="cidade"
               id="visitante_cidade"
+              required
               onChange={updateInputs}
             >
-              <option value=""></option>
+              <option value="" disabled selected></option>
               <option value="Beberibe">Beberibe</option>
               <option value="Fortaleza">Fortaleza</option>
               <option value="Horizonte">Horizonte</option>
@@ -108,9 +114,10 @@ export default function VisitorForm() {
               className="px-2 py-3 rounded-md border border-[#ddd]"
               name="bairro"
               id="visitante_bairro"
+              required
               onChange={updateInputs}
             >
-              <option value="" disabled></option>
+              <option value="" disabled selected></option>
               <option value="Aerolândia">Aerolândia</option>
               <option value="Aldeota">Aldeota</option>
               <option value="Centro">Centro</option>
