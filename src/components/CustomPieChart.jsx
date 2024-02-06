@@ -2,7 +2,14 @@ import React, { PureComponent } from "react";
 import { PieChart, Pie, Tooltip, Cell, Legend } from "recharts";
 import FormatData from "../utils/FormatData";
 
-const COLORS = ["#0087feb1", "#00c4a0c2", "#ffbb28c8", "#ff8142d9"];
+const COLORS = [
+  "#8884d8",
+  "#00c4a0c2",
+  "#ffbb28c8",
+  "#ff8142d9",
+  "#d884ca",
+  "#0087feb1",
+];
 
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({

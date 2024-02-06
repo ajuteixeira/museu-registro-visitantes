@@ -14,7 +14,7 @@ class CustomizedAxisTick extends PureComponent {
           textAnchor="end"
           fill="#666"
           transform="rotate(-35)"
-          fontSize={13}
+          fontSize={9}
         >
           {payload.value}
         </text>
@@ -40,13 +40,13 @@ const CustomBarChart = ({ data, title, color }) => {
     <div className="w-1/3 p-5 flex flex-col items-center justify-between rounded-lg shadow-sm bg-white">
       <div className="font-bold">{title}</div>
       <BarChart
-        width={400}
+        width={450}
         height={250}
         data={formattedData}
         margin={{
           top: 30,
-          right: 30,
-          left: 10,
+          right: 50,
+          left: 0,
           bottom: 30,
         }}
       >
@@ -60,7 +60,7 @@ const CustomBarChart = ({ data, title, color }) => {
           tick={<CustomizedAxisTick />}
           tickMargin={-3}
         />
-        <YAxis tick={{ fontSize: 13 }} interval={0} allowDecimals={false} />
+        <YAxis tick={{ fontSize: 11 }} interval={0} allowDecimals={false} />
       </BarChart>
     </div>
   );
