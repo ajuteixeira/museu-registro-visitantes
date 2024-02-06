@@ -28,13 +28,17 @@ export default function Dashboard() {
             title="Visitantes por cidade"
             data={CountData(visitante, "visitante_cidade")}
           />
-          <CustomPieChart
-            title="Visitantes por gênero"
-            data={CountData(visitante, "visitante_genero")}
+          <CustomBarChart
+            title="Visitantes por bairro"
+            data={CountData(visitante, "visitante_bairro")}
           />
           <CustomBarChart
             title="Visitantes por mês"
             data={CountData(visitante, "visitante_cidade")}
+          />
+          <CustomPieChart
+            title="Visitantes por gênero"
+            data={CountData(visitante, "visitante_genero")}
           />
         </div>
         <Footer />

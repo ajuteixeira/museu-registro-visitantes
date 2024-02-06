@@ -41,7 +41,7 @@ const CustomBarChart = ({ data, title }) => {
       <div className="font-bold">{title}</div>
       <BarChart
         width={400}
-        height={300}
+        height={250}
         data={formattedData}
         margin={{
           top: 30,
