@@ -131,7 +131,7 @@ export default function VisitorForm() {
           </div>
         </div>
         <input
-          className="w-full p-3 mt-4 rounded-md border cursor-pointer bg-[#e3e7e8]"
+          className="w-full p-3 mt-4 text-white rounded-md border cursor-pointer opacity-80 hover:opacity-75 bg-[#212529]"
           type="submit"
           value="Enviar"
         />
