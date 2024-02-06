@@ -105,6 +105,8 @@ export default function VisitorForm() {
               <option value="Beberibe">Beberibe</option>
               <option value="Fortaleza">Fortaleza</option>
               <option value="Horizonte">Horizonte</option>
+              <option value="Itaitinga">Itaitinga</option>
+              <option value="Pacajus">Pacajus</option>
               <option value="Sobral">Sobral</option>
             </select>
           </div>
@@ -120,13 +122,18 @@ export default function VisitorForm() {
               <option value="" disabled selected></option>
               <option value="Aerolândia">Aerolândia</option>
               <option value="Aldeota">Aldeota</option>
+              <option value="Benfica">Benfica</option>
+              <option value="Bom Jardim">Bom Jardim</option>
               <option value="Centro">Centro</option>
+              <option value="Curió">Curió</option>
               <option value="Lagoa Redonda">Lagoa Redonda</option>
               <option value="Meireles">Meireles</option>
               <option value="Messejana">Messejana</option>
+              <option value="Montese">Montese</option>
+              <option value="Parangaba">Parangaba</option>
               <option value="Parquelândia">Parquelândia</option>
               <option value="Pedras">Pedras</option>
-              <option value="Praia do Futuro">Praia do Futuro</option>
+              <option value="Pirambu">Pirambu</option>
             </select>
           </div>
         </div>
