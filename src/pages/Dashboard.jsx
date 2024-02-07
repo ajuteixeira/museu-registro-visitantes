@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { API } from "../services";
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import { DownloadDocument } from "../components/DownloadDocument";
 
 import Header from "../components/Header";
 import CustomPieChart from "../components/CustomPieChart";
-import CountData from "../utils/CountData";
 import CustomBarChart from "../components/CustomBarChart";
+import CountData from "../utils/CountData";
 
 export default function Dashboard() {
   const [visitante, setVisitante] = useState([]);
@@ -24,7 +26,9 @@ export default function Dashboard() {
         <Header />
         <div className="mr-24 flex justify-end">
           <button className="p-3 mt-8 rounded-md border cursor-pointer bg-[#e3e7e8] hover:bg-[#d8dcdd]">
-            Baixar PDF
+            <PDFDownloadLink document={<DownloadDocument />}>
+              Baixar PDF
+            </PDFDownloadLink>
           </button>
         </div>
         <div className="w-full pt-8 pb-16 h-full flex items-center justify-center gap-6 flex-wrap">
