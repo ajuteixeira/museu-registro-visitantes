@@ -26,7 +26,9 @@ export default function Dashboard() {
         <Header />
         <div className="mr-24 flex justify-end">
           <button className="p-3 mt-8 rounded-md border cursor-pointer bg-[#e3e7e8] hover:bg-[#d8dcdd]">
-            <PDFDownloadLink document={<DownloadDocument />}>
+            <PDFDownloadLink
+              document={<DownloadDocument visitante={visitante} />}
+            >
               Baixar PDF
             </PDFDownloadLink>
           </button>
