@@ -1,8 +1,14 @@
-# React + Vite
+# Registro de visitantes de um museu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto tem como objetivo facilitar o resgistro de visitantes de um museu, processo que ainda é comumente feito com papel e caneta, e foi inspirado no **MIS - Museu da Imagem e do Som Chico Albuquerque**, localizado em Fortaleza. 
+A aplicação front-end foi desenvolvida com React.js, Tailwind, Recharts e React-pdf.
 
-Currently, two official plugins are available:
+O projeto conta com três áreas:
+- Página para cadastro de novos visitantes
+- Página de login para administradores
+- Dashboard para visualização e download de dados sobre os visitantes do museu
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Preview
+<img src="https://i.postimg.cc/5yrtbcZm/mis-museu-3.png" width="100%">
+<img src="https://i.postimg.cc/9F4M1M7g/mis-museu-1.png" width="100%">
+<img src="https://i.postimg.cc/0QcQXKnF/mis-museu-2.png" width="100%">
